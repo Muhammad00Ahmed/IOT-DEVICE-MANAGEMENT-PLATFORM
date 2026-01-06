@@ -1,0 +1,39 @@
+{
+  "name": "iot-platform-backend",
+  "version": "1.0.0",
+  "description": "Backend for IoT Device Management Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "mqtt-broker": "node mqtt/broker.js",
+    "test": "jest --coverage"
+  },
+  "keywords": ["iot", "mqtt", "device-management", "telemetry"],
+  "author": "Muhammad Ahmed <mahmedrangila@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "mqtt": "^5.3.4",
+    "mosca": "^2.8.3",
+    "influx": "^5.9.3",
+    "redis": "^4.6.11",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "socket.io": "^4.6.1",
+    "bull": "^4.12.0",
+    "nodemailer": "^6.9.7",
+    "twilio": "^4.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
